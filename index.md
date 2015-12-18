@@ -3,6 +3,8 @@ layout: page
 title: Developer's Guide!
 ---
 
+{% include JB/setup %}
+
 Notes for a Clojurescript Beginner
 ==================================
 
