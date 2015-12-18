@@ -1,46 +1,38 @@
 ---
-layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Developer's Guide!
 ---
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+Notes for a Clojurescript Beginner
+==================================
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Learning Clojure itself is pretty nice, but learning the libraries and frameworks built for Clojurescript through Google is fucking painful, so here's some notes.
 
-## Update Author Attributes
+Boot
+----
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+By default boot will compile to **target/main.js**. Say you want to change to **static/everything.js**, you need to set build.boot correctly and put the edn in the right place:
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+build.boot
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+    (set-env! :target-path "static"
+              :source-paths #{"src"}
+              :dependencies '[...])
 
-    $ rm -rf _posts/core-samples
+src/everything.cljs.edn
 
-Here's a sample "posts list".
+    {:require [myproject.app]}
+
+Your directory structure would look like:
+
+    root
+    ├── build.boot
+    └── src
+        ├── myproject
+        │   └── app.cljs
+        └── everything.cljs.edn
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
