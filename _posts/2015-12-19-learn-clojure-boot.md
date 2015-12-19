@@ -59,7 +59,7 @@ If I take piggieback out, I get an error when running ```boot dev```, but I need
 Here's my directory structure:
 
 ```
-clojure_project
+root
 ├── build.boot 
 ├── src
 │   └── cljs
