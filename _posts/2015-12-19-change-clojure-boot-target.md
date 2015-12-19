@@ -12,13 +12,8 @@ By default boot will compile to **target/main.js**. Say you want to change to **
           :source-paths #{"src"}
           :dependencies '[[org.clojure/clojure "1.7.0"]
                           [org.clojure/clojurescript "1.7.170" :scope "provided"]
-                          [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                           [com.cemerick/piggieback "0.2.1"  :scope "test"]
                           [weasel "0.7.0"  :scope "test"]
-                          [cljs-ajax "0.3.14"]
-                          [datascript "0.13.3"]
-                          [funcool/cuerdas "0.6.0"]
-                          [reagent "0.5.1"]
                           [adzerk/boot-cljs "1.7.170-3" :scope "test"]
                           [adzerk/boot-cljs-repl   "0.3.0"]
                           [adzerk/boot-reload "0.4.2" :scope "test"]
@@ -26,7 +21,7 @@ By default boot will compile to **target/main.js**. Say you want to change to **
 ```
 
 **src/everything.cljs.edn**
-```
+```clojure
 {:require [myproject.app]}
 ```
 
