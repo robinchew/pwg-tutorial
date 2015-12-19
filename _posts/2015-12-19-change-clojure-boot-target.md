@@ -1,11 +1,13 @@
 ---
-published: false
+layout: post
+title: Change Clojure Boot target
 ---
 
 {% include JB/setup %}
 
-Changing Boot Target
-====================
+Changing Clojure Boot Target
+============================
+
 In lein, you would be familiar with the **output-to** build setting. It's not as straight forward to change that in boot.
 
 By default boot will compile to **target/main.js**. Say you want to change to **static/everything.js**, you need to set build.boot correctly and put the edn in the right place:
