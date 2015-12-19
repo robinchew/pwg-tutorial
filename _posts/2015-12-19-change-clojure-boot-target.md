@@ -1,10 +1,3 @@
----
-layout: post
-title: Change Clojure Boot target
----
-
-{% include JB/setup %}
-
 Changing Clojure Boot Target
 ============================
 
