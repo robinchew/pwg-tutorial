@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Developer's Guide"
+published: true
+---
+
+{% include JB/setup %}
 
 Notes for a Clojurescript Beginner
 ==================================
