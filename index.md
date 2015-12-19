@@ -6,12 +6,13 @@ published: true
 
 
 
+
 {% include JB/setup %}
 
 Notes for a Clojurescript Beginner
 ==================================
 
-Learning Clojure itself is pretty nice, but learning the libraries and frameworks built for Clojurescript through Google is fucking painful, so here's some notes.
+Learning Clojure the language on Google is pretty nice, but learning the tools, libraries and frameworks built for Clojurescript through Google is fucking painful, so here's some notes.
 
 <ul class="posts">
   {% for post in site.posts %}
