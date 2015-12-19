@@ -1,21 +1,10 @@
----
-layout: page
-title: "Developer's Guide"
-published: true
----
-
-
-
-
-{% include JB/setup %}
 
 Notes for a Clojurescript Beginner
 ==================================
 
-Learning Clojure the language on Google is pretty nice, but learning the tools, libraries and frameworks built for Clojurescript through Google is fucking painful, so here's some notes.
+Learning Clojure the language on Google is fun, but learning the tools, libraries and frameworks built for Clojurescript through Google is fucking painful, so here's some notes.
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+- [Clojure Fragile Dependencies](https://github.com/robinchew/robinchew.github.io/blob/master/_posts/2015-12-19-clojure-dependencies.md)
+- [Learn Clojure Boot](https://github.com/robinchew/robinchew.github.io/blob/master/_posts/2015-12-19-learn-clojure-boot.md)
+- [Changing Clojure Boot Target](https://github.com/robinchew/robinchew.github.io/blob/master/_posts/2015-12-19-change-clojure-boot-target.md)
+- 
