@@ -1,10 +1,3 @@
----
-layout: post
-title: Learn Clojure Boot
----
-
-{% include JB/setup %}
-
 Learn Clojure Boot
 ==================
 
