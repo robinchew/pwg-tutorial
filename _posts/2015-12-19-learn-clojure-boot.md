@@ -9,7 +9,7 @@ That line came from a talk https://youtu.be/93CttPV79Q0?t=2043. You should proba
 
 Tenzing is just the author's project name, just use it as a reference project that has a running boot, then tweak it to your liking. It's a roundabout way to setup boot since first you need **lein** (boot's competitor) then you pull in someone else's project with boot, just to get the server running on your project. This was my crude way of getting things setup with minimal reading and maximum copy pasting.
 
-When I pare it down, the build.boot looks like:
+This is the **build.boot** that I end up with after making a number of changes for my own need. If it doesn't work for you, perhaps you should forget about my bulid.boot and just tinker with tenzing to fit your needs:
 
 ```clojure
 (set-env!
