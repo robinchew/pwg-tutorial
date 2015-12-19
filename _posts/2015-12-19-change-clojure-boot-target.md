@@ -5,7 +5,7 @@ In lein, you would be familiar with the **output-to** build setting. It's not as
 
 By default boot will compile to **target/main.js**. Say you want to change to **static/everything.js**, you need to set build.boot correctly and put the edn in the right place:
 
-build.boot - The key things to look at are **target-path** and **source-paths*. I'm showing you the dependencies so you get the versions right.
+**build.boot** - The key things to look at are **target-path** and **source-paths**. I'm showing you the dependencies so you get the versions right.
 
 ```clojure
 (set-env! :target-path "static"
@@ -25,8 +25,7 @@ build.boot - The key things to look at are **target-path** and **source-paths*. 
                           [pandeiro/boot-http "0.7.1-SNAPSHOT"])
 ```
 
-src/everything.cljs.edn
-
+**src/everything.cljs.edn**
 ```
 {:require [myproject.app]}
 ```
