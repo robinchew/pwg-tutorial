@@ -1,17 +1,12 @@
-The documentation in this tree is in plain text files and can be viewed using
-any text file viewer.
+Python 3
+```
+git clone https://github.com/robinchew/pwg-tutorial.git
+virtualenv ~/venv
+~/venv/bin/pip install sphinx
+source ~/venv/bin/activate
+cd pwg-tutorial
+make html
+```
+Open `_build/html/index.html` in browser.
 
-It uses ReST (reStructuredText) [1], and the Sphinx documentation system [2].
-This allows it to be built into other forms for easier viewing and browsing.
-
-To create an HTML version of the docs:
-
-* Install Sphinx (using ``pip install Sphinx`` or some other method)
-
-* In this docs/ directory, type ``make html`` (or ``make.bat html`` on
-  Windows) at a shell prompt.
-
-The documentation in _build/html/index.html can then be viewed in a web browser.
-
-[1] http://docutils.sourceforge.net/rst.html
-[2] http://sphinx-doc.org/
+Installing Sphinx with Python 2 requires Jinja to be installed separately.
