@@ -22,6 +22,17 @@ Go to Start menu and search for ``cmd`` and open the command prompt/shell.
 
 .. image:: https://tutorial.djangogirls.org/en/python_installation/images/windows-plus-r.png
 
+You can verify that Python is installed by typing ``python`` from your shell;
+you should see something like::
+
+    C:\Users\alex>python
+    Python 3.6.x
+    [GCC 4.x] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+
+Press ``Ctrl + D`` to exit.
+
 Install Python on Mac
 =====================
 
@@ -32,33 +43,20 @@ Other Installers
 
 https://www.python.org/downloads/release/python-360/
 
-Is it installed?
-================
-
-You can verify that Python is installed by typing ``python`` from your shell;
-you should see something like::
-
-    Python 3.4.x
-    [GCC 4.x] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
-
-Press ``Ctrl + D`` to exit.
-
 Set up a database
 =================
 
-Python includes a lightweight database called SQLite_ so you won't need to set up a database.
+Python includes a lightweight database called SQLite so you won't need to set up a database.
 
 Install Django
 ==============
 
 ::
 
-    pip install django
+    C:\Users\alex\>pip install django
 
-Verifying
-=========
+Is Django installed?
+====================
 
 To verify that Django can be seen by Python, type ``python`` from your shell.
 Then at the Python prompt, try to import Django:
