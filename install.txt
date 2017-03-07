@@ -2,29 +2,38 @@
 Quick install guide
 ===================
 
-Before you can use Django, you'll need to get it installed. We have a
-:doc:`complete installation guide </topics/install>` that covers all the
-possibilities; this guide will guide you to a simple, minimal installation
-that'll work while you walk through the introduction.
+Before you can use Django, you'll need to get it installed.
 
-Install Python
-==============
+Install Python on Windows
+=========================
 
-Being a Python Web framework, Django requires Python. See
-:ref:`faq-python-version-support` for details. Python includes a lightweight
-database called SQLite_ so you won't need to set up a database just yet.
+Download and install https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe
 
-.. _sqlite: https://sqlite.org/
+.. admonition:: Be careful during installation!
 
-Get the latest version of Python at https://www.python.org/download/ or with
-your operating system's package manager.
+    One thing to watch out for: Make sure you tick the "Add Python 3.6 to PATH" checkbox before installing, as shown below. If not, you will not be able to run ``python`` in your shell.
 
-.. admonition:: Django on Jython
+.. image:: https://tutorial.djangogirls.org/en/python_installation/images/python-installation-options.png
 
-    If you use Jython_ (a Python implementation for the Java platform), you'll
-    need to follow a few additional steps. See :doc:`/howto/jython` for details.
+Launch Shell on Windows
+=======================
 
-.. _jython: http://www.jython.org/
+Go to Start menu and search for ``cmd`` and open the command prompt/shell.
+
+.. image:: https://tutorial.djangogirls.org/en/python_installation/images/windows-plus-r.png
+
+Install Python on Mac
+=====================
+
+https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg
+
+Other Installers
+================
+
+https://www.python.org/downloads/release/python-360/
+
+Is it installed?
+================
 
 You can verify that Python is installed by typing ``python`` from your shell;
 you should see something like::
@@ -34,47 +43,19 @@ you should see something like::
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
+Press ``Ctrl + D`` to exit.
+
 Set up a database
 =================
 
-This step is only necessary if you'd like to work with a "large" database engine
-like PostgreSQL, MySQL, or Oracle. To install such a database, consult the
-:ref:`database installation information <database-installation>`.
-
-Remove any old versions of Django
-=================================
-
-If you are upgrading your installation of Django from a previous version, you
-will need to :ref:`uninstall the old Django version before installing the new
-version <removing-old-versions-of-django>`.
+Python includes a lightweight database called SQLite_ so you won't need to set up a database.
 
 Install Django
 ==============
 
-You've got three easy options to install Django:
+::
 
-* :ref:`Install an official release <installing-official-release>`. This
-  is the best approach for most users.
-
-* Install a version of Django :ref:`provided by your operating system
-  distribution <installing-distribution-package>`.
-
-* :ref:`Install the latest development version
-  <installing-development-version>`. This option is for enthusiasts who want
-  the latest-and-greatest features and aren't afraid of running brand new code.
-  You might encounter new bugs in the development version, but reporting them
-  helps the development of Django. Also, releases of third-party packages are
-  less likely to be compatible with the development version than with the
-  latest stable release.
-
-.. admonition:: Always refer to the documentation that corresponds to the
-    version of Django you're using!
-
-    If you do either of the first two steps, keep an eye out for parts of the
-    documentation marked **new in development version**. That phrase flags
-    features that are only available in development versions of Django, and
-    they likely won't work with an official release.
-
+    pip install django
 
 Verifying
 =========
@@ -93,4 +74,4 @@ You may have another version of Django installed.
 That's it!
 ==========
 
-That's it -- you can now :doc:`move onto the tutorial </intro/tutorial01>`.
+That's it -- you can now :doc:`move onto the tutorial <tutorial01>`.
