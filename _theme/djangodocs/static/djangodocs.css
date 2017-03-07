@@ -53,6 +53,7 @@ div.figure p.caption { font-size:1em; margin-top:0; margin-bottom:1.5em; color: 
 hr { color:#ccc; background-color:#ccc; height:1px; border:0; }
 p, ul, dl { margin-top:.6em; margin-bottom:1em; padding-bottom: 0.1em;}
 #yui-main div.yui-b img {
+    max-width: 100%;
     display: block;
     border: #999 1px solid;
 }
