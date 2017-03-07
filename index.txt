@@ -17,7 +17,6 @@ place: read this material to quickly get up and running.
 
 .. seealso::
 
-    If you already know a few other languages and want to get up to speed with
-    Python quickly, we recommend `Dive Into Python`_.
+    If you want to get up to speed with Python quickly, we recommend `Dive Into Python`_.
 
     .. _Dive Into Python: http://www.diveintopython3.net/
