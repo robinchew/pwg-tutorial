@@ -2,7 +2,7 @@
 Writing your first Django app, part 6
 =====================================
 
-This tutorial begins where :doc:`Tutorial 5 </intro/tutorial05>` left off.
+This tutorial begins where :doc:`Tutorial 5 <tutorial05>` left off.
 We've built a tested Web-poll application, and we'll now add a stylesheet and
 an image.
 
@@ -115,5 +115,5 @@ static files </howto/static-files/deployment>` discusses how to use static
 files on a real server.
 
 When you're comfortable with the static files, read :doc:`part 7 of this
-tutorial </intro/tutorial07>` to learn how to customize Django's
+tutorial <tutorial07>` to learn how to customize Django's
 automatically-generated admin site.

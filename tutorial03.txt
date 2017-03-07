@@ -2,7 +2,7 @@
 Writing your first Django app, part 3
 =====================================
 
-This tutorial begins where :doc:`Tutorial 2 </intro/tutorial02>` left off. We're
+This tutorial begins where :doc:`Tutorial 2 <tutorial02>` left off. We're
 continuing the Web-poll application and will focus on creating the public
 interface -- "views."
 
@@ -145,7 +145,7 @@ you want, using whatever Python libraries you want.
 All Django wants is that :class:`~django.http.HttpResponse`. Or an exception.
 
 Because it's convenient, let's use Django's own database API, which we covered
-in :doc:`Tutorial 2 </intro/tutorial02>`. Here's one stab at a new ``index()``
+in :doc:`Tutorial 2 <tutorial02>`. Here's one stab at a new ``index()``
 view, which displays the latest 5 poll questions in the system, separated by
 commas, according to publication date:
 
@@ -236,7 +236,7 @@ objects.
 
 Load the page by pointing your browser at "/polls/", and you should see a
 bulleted-list containing the "What's up" question from :doc:`Tutorial 2
-</intro/tutorial02>`. The link points to the question's detail page.
+<tutorial02>`. The link points to the question's detail page.
 
 A shortcut: :func:`~django.shortcuts.render`
 --------------------------------------------
@@ -457,4 +457,4 @@ to point at the namespaced detail view:
     <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
 
 When you're comfortable with writing views, read :doc:`part 4 of this tutorial
-</intro/tutorial04>` to learn about simple form processing and generic views.
+<tutorial04>` to learn about simple form processing and generic views.

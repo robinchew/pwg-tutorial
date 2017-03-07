@@ -2,7 +2,7 @@
 Writing your first Django app, part 2
 =====================================
 
-This tutorial begins where :doc:`Tutorial 1 </intro/tutorial01>` left off.
+This tutorial begins where :doc:`Tutorial 1 <tutorial01>` left off.
 We'll setup the database, create your first model, and get a quick introduction
 to Django's automatically-generated admin site.
 
@@ -729,7 +729,7 @@ The bottom part of the page gives you a couple of options:
 * Delete -- Displays a delete confirmation page.
 
 If the value of "Date published" doesn't match the time when you created the
-question in :doc:`Tutorial 1</intro/tutorial01>`, it probably
+question in :doc:`Tutorial 1<tutorial01>`, it probably
 means you forgot to set the correct value for the :setting:`TIME_ZONE` setting.
 Change it, reload the page and check that the correct value appears.
 
@@ -742,5 +742,5 @@ with the timestamp and username of the person who made the change:
    :alt: History page for question object
 
 When you're comfortable with the models API and have familiarized yourself with
-the admin site, read :doc:`part 3 of this tutorial</intro/tutorial03>` to learn
+the admin site, read :doc:`part 3 of this tutorial<tutorial03>` to learn
 about how to add more views to our polls app.

@@ -2,7 +2,7 @@
 Writing your first Django app, part 4
 =====================================
 
-This tutorial begins where :doc:`Tutorial 3 </intro/tutorial03>` left off. We're
+This tutorial begins where :doc:`Tutorial 3 <tutorial03>` left off. We're
 continuing the Web-poll application and will focus on simple form processing and
 cutting down our code.
 
@@ -55,7 +55,7 @@ A quick rundown:
   :ttag:`{% csrf_token %}<csrf_token>` template tag.
 
 Now, let's create a Django view that handles the submitted data and does
-something with it. Remember, in :doc:`Tutorial 3 </intro/tutorial03>`, we
+something with it. Remember, in :doc:`Tutorial 3 <tutorial03>`, we
 created a URLconf for the polls application that includes this line:
 
 .. snippet::
@@ -134,7 +134,7 @@ This code includes a few things we haven't covered yet in this tutorial:
   This function helps avoid having to hardcode a URL in the view function.
   It is given the name of the view that we want to pass control to and the
   variable portion of the URL pattern that points to that view. In this
-  case, using the URLconf we set up in :doc:`Tutorial 3 </intro/tutorial03>`,
+  case, using the URLconf we set up in :doc:`Tutorial 3 <tutorial03>`,
   this :func:`~django.urls.reverse` call will return a string like
   ::
 
@@ -143,7 +143,7 @@ This code includes a few things we haven't covered yet in this tutorial:
   where the ``3`` is the value of ``question.id``. This redirected URL will
   then call the ``'results'`` view to display the final page.
 
-As mentioned in :doc:`Tutorial 3 </intro/tutorial03>`, ``request`` is an
+As mentioned in :doc:`Tutorial 3 <tutorial03>`, ``request`` is an
 :class:`~django.http.HttpRequest` object. For more on
 :class:`~django.http.HttpRequest` objects, see the :doc:`request and
 response documentation </ref/request-response>`.
@@ -162,7 +162,7 @@ page for the question. Let's write that view:
         return render(request, 'polls/results.html', {'question': question})
 
 This is almost exactly the same as the ``detail()`` view from :doc:`Tutorial 3
-</intro/tutorial03>`. The only difference is the template name. We'll fix this
+<tutorial03>`. The only difference is the template name. We'll fix this
 redundancy later.
 
 Now, create a ``polls/results.html`` template:
@@ -200,7 +200,7 @@ without having chosen a choice, you should see the error message.
 Use generic views: Less code is better
 ======================================
 
-The ``detail()`` (from :doc:`Tutorial 3 </intro/tutorial03>`) and ``results()``
+The ``detail()`` (from :doc:`Tutorial 3 <tutorial03>`) and ``results()``
 views are very simple -- and, as mentioned above, redundant. The ``index()``
 view, which displays a list of polls, is similar.
 
@@ -345,4 +345,4 @@ For full details on generic views, see the :doc:`generic views documentation
 </topics/class-based-views/index>`.
 
 When you're comfortable with forms and generic views, read :doc:`part 5 of this
-tutorial</intro/tutorial05>` to learn about testing our polls app.
+tutorial<tutorial05>` to learn about testing our polls app.

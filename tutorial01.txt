@@ -389,5 +389,5 @@ global changes to the URL patterns of your project while only touching a single
 file.
 
 When you're comfortable with the basic request and response flow, read
-:doc:`part 2 of this tutorial </intro/tutorial02>` to start working with the
+:doc:`part 2 of this tutorial <tutorial02>` to start working with the
 database.
