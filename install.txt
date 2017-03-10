@@ -36,7 +36,24 @@ Press ``Ctrl + D`` to exit.
 Install Python on Mac
 =====================
 
-https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg
+Open Terminal (Command+Space, type Terminal and press Enter)
+
+Enter ``xcode-select --install`` and complete installation
+
+Next copy paste the following and press enter:
+
+``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
+
+Then:
+
+``brew install python3``
+
+And finally
+
+``pip3 install django``
+
+From now on, when this guide tells you to type `python` in the terminal, type `python3` instead.
+Likewise, `pip` should be replaced with `pip3`
 
 Other Installers
 ================
