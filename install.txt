@@ -47,7 +47,7 @@ Then:
 ``brew install python3``
 
 And finally
-``pip install django``
+``pip3 install django``
 
 Other Installers
 ================
