@@ -69,7 +69,32 @@ Then at the Python prompt, try to import Django:
 
 You may have another version of Django installed.
 
-That's it!
-==========
+Text Editor/IDEs
+================
 
-That's it -- you can now :doc:`move onto the tutorial <tutorial01>`.
+Text editors just make changing text easier while IDEs (Interactive Development Environment) goes beyond just writing code, like the ability to automatically run code and interactively stepping through each line of code to fix bugs. Sometimes the line between text editors and IDEs are blurred.
+
+Python can be coded on the most barebones of text editors. There are many text editors and IDEs out there that you can explore.
+
+To keep things quick and simple, we will recommend:
+
+* Sublime Text 3
+    * `Windows 64bit <https://download.sublimetext.com/Sublime%20Text%20Build%203126%20x64%20Setup.exe>`_
+    * `Mac OSX 10.7 or later <https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg>`_
+    * `Others <https://www.sublimetext.com/3>`_
+
+Other text editors:
+
+* Notepad++ (notepad-plus-plus.org)
+* Atom (atom.io)
+
+Other IDEs:
+
+* PyCharm (www.jetbrains.com/pycharm)
+* Visual Studio Code (code.visualstudio.com)
+
+
+You are now ready to code!
+==========================
+
+:doc:`Move onto the tutorial <tutorial01>`.
