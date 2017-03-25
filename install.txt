@@ -29,9 +29,13 @@ you should see something like::
     Python 3.6.x
     [GCC 4.x] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+    >>> exit()
 
-Press ``Ctrl + D`` to exit.
+Type ``exit()`` to exit.
+
+.. admonition:: CTRL + D does not work
+
+    CTRL + D does not work on Windows
 
 Install Python on Mac
 =====================
